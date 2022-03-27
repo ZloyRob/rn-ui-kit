@@ -25,5 +25,8 @@ module.exports = api => {
         },
       ],
     ],
+    assumptions: {
+      privateFieldsAsProperties: true,
+    },
   };
 };

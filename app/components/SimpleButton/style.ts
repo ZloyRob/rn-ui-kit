@@ -14,19 +14,18 @@ const styles = StyleSheet.create({
   text: {
     ...Platform.select({
       ios: {
-        // fontFamily: 'SFProText-Semibold',
         letterSpacing: -0.41,
         fontSize: 17,
       },
       android: {
         letterSpacing: 1.5,
         fontSize: 14,
-        // fontFamily: 'Roboto-Medium',
         textTransform: 'uppercase',
       },
     }),
     textAlign: 'center',
     color: '#fff',
+    zIndex: 1,
   },
   leftIcon: {
     width: Platform.OS === 'ios' ? 16 : 12,
