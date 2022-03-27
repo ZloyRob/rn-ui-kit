@@ -30,7 +30,8 @@ const styles = StyleSheet.create({
   leftIcon: {
     width: Platform.OS === 'ios' ? 16 : 12,
     aspectRatio: 1,
-    marginRight: 8,
+    marginRight: 8, 
+    zIndex: 1
   },
   shadow: {
     shadowOffset: {width: 0, height: 8},

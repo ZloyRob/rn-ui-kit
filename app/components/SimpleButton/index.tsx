@@ -38,7 +38,15 @@ export default function SimpleButton({
         colors={disabled ? disabledBackgroundColors : backgroundColors}
         style={[{borderRadius}, styles.gradient]}
       />
-      {LeftIcon && <LeftIcon style={styles.leftIcon} />}
+      {/* {LeftIcon && <LeftIcon style={styles.leftIcon} />} */}
+      {LeftIcon && (
+        <LeftIcon
+          style={{
+            marginRight: 8,
+            zIndex: 1,
+          }}
+        />
+      )}
       <Text style={[styles.text, textStyle]}>{text}</Text>
     </TouchableOpacity>
   );
